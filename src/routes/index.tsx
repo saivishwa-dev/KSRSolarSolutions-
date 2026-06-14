@@ -363,9 +363,9 @@ At KSR Solar Solutions, we are dedicated to delivering reliable and sustainable 
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
-              { img: projectSolar, title: "Solar Panels", text: "Our solar panel projects are designed to provide clean, reliable, and cost-effective energy for homes and businesses. With expert installation and premium-quality components, we help customers reduce electricity costs while embracing a sustainable future." },
+              { img: projectSolar, title: "Solar Panels Installation", text: "Our solar panel projects are designed to provide clean, reliable, and cost-effective energy for homes and businesses. With expert installation and premium-quality components, we help customers reduce electricity costs while embracing a sustainable future." },
               { img: projectInverter, title: "Inverters Installation", text: "Our inverter installation projects are designed to maximize solar system performance through efficient power conversion We deliver high-quality solutions that ensure stable energy output and long-term savings for homes and businesses." },
-              { img: projectElectrical,   text: "Our electrical projects deliver safe, efficient, and dependable power solutions for residential and commercial properties. From wiring and distribution systems to electrical upgrades and maintenance, we ensure every installation meets the highest standards of quality and safety."},
+              { img: projectElectrical,   title: "Electrical Works", text: "Our electrical projects deliver safe, efficient, and dependable power solutions for residential and commercial properties. From wiring and distribution systems to electrical upgrades and maintenance, we ensure every installation meets the highest standards of quality and safety."},
             ].map((p, i) => (
               <Reveal key={p.title} variant="zoom" delay={(i === 0 ? 0 : i === 1 ? 200 : 400) as 0 | 200 | 400} className="group">
                 <div className="lift overflow-hidden rounded-2xl bg-white shadow-xl">
