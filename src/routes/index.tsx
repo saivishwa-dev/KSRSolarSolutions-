@@ -244,20 +244,19 @@ function Index() {
           <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 md:grid-cols-2">
             <div>
               <h1 className="text-5xl font-extrabold leading-[1.05] text-ink md:text-6xl">
-                Power Your Future<br />With Reliable Solar<br />Solutions
+                Power Your Future  <br />With Reliable Solar<br /> Solutions
               </h1>
               <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
-                Where We're Committed To Transforming The Way You Power Your Life. Our Mission Is Simple: To Harness The Abundant Energy Of The Sun And Convert It Into Clean, Sustainable Power For Your Home Or Business.
-              </p>
+At KSR Solar Solutions, we are dedicated to delivering reliable and sustainable energy solutions for homes and businesses. Through expert solar installations, inverter systems, and electrical services, we help our customers reduce energy costs, improve efficiency, and embrace a cleaner, greener future powered by renewable energy.              </p>
               <div className="mt-8 flex items-center gap-6">
                 <button className="rounded-md bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-md transition hover:bg-brand-dark">
-                  How It's Work ?
+                  How We Work ?
                 </button>
                 <button className="group flex items-center gap-3 text-sm font-semibold text-ink">
                   <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand text-white transition group-hover:scale-110">
                     <Play className="h-4 w-4 fill-white" />
                   </span>
-                  How it's works?
+                  Watch Our work?
                 </button>
               </div>
             </div>
@@ -272,9 +271,9 @@ function Index() {
         {/* Services strip */}
         <div className="mx-auto mt-16 grid max-w-6xl gap-8 px-6 md:grid-cols-3">
           {[
-            { icon: iconSolar, title: "Solar Panel Installation", text: "We're Passionate About Harnessing The Unlimited Potential Of Solar Energy To Revolutionize The Way You Power Your Home Or Business." },
-            { icon: iconInverter, title: "Inverter Installations", text: "Expert installation of high-efficiency solar inverters with safe wiring, smart monitoring, and seamless grid integration for maximum power conversion." },
-            { icon: iconElectrical, title: "Electrical Works", text: "End-to-end residential and commercial electrical works—distribution boards, wiring, earthing, and load balancing by certified electricians." },
+            { icon: iconSolar, title: "Solar Panel Installation",     text: "Expert solar panel installation for residential and commercial properties, delivering clean, reliable, and cost-effective energy solutions for a sustainable future."},
+            { icon: iconInverter, title: "Inverter Installations",     text: "Professional inverter and battery installation services that provide reliable power backup during outages, ensuring uninterrupted electricity for homes and businesses."},
+            { icon: iconElectrical, title: "Electrical Works" , text: "Professional electrical services for residential and commercial properties, including wiring, maintenance, safety upgrades to ensure reliable and efficient power systems."},
           ].map((s, i) => (
             <Reveal key={s.title} delay={(i === 0 ? 0 : i === 1 ? 200 : 400) as 0 | 200 | 400} className="group text-center text-white">
               <div className="mx-auto inline-flex h-24 w-24 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/15 transition-all duration-500 group-hover:bg-white/10 group-hover:ring-sun/60 group-hover:shadow-[0_0_40px_oklch(0.86_0.18_95_/_0.4)]">
@@ -294,15 +293,15 @@ function Index() {
       <section id="about" className="bg-brand py-20 scroll-mt-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-2 md:items-center">
           <div className="text-white">
-            <p className="text-sm font-bold uppercase tracking-wider text-sun">About KSR Solar Solutions</p>
+            <p className="text-sm font-bold uppercase tracking-wider text-sun">About Us</p>
             <h2 className="mt-3 text-4xl font-extrabold leading-tight md:text-5xl">
-              We Are Experts In The World<br />Of Solar & Renewable Energy
+             Your Trusted Experts In<br />Solar & Renewable Energy Solutions
             </h2>
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-white/80">
-              Our Journey In The Realm Of Solar And Renewable Energy Has Been Marked By Groundbreaking Achievements And Transformative Projects. From Designing And Implementing Cutting-Edge Solar Installations To Spearheading Innovative Research And Development Initiatives, We're Continually Pushing The Boundaries Of What's Possible. We Understand The Immense Potential Of Solar And Renewable Energy To Power Progress And Drive Positive Change. That's Why We're Passionate About Sharing Our Knowledge And Expertise.
+            KSR Solar Solutions is dedicated to providing professional solar and electrical services tailored to the needs of residential and commercial customers. From high-performance solar panel installations and efficient inverter systems to dependable electrical works, we deliver solutions designed for reliability, savings, and sustainability. Our goal is to help customers harness clean energy, lower electricity expenses, and build a brighter, energy-efficient future with confidence.  
             </p>
             <div className="mt-8 flex items-center gap-6">
-              <button className="rounded-md bg-sun px-6 py-3 text-sm font-bold text-ink hover:brightness-95">Top Renewable</button>
+              <button className="rounded-md bg-sun px-6 py-3 text-sm font-bold text-ink hover:brightness-95">Click for more Details</button>
               <a href="#" className="inline-flex items-center gap-1.5 text-sm font-bold text-white hover:text-sun">
                 Learn More <ArrowRight className="h-4 w-4" />
               </a>
@@ -315,7 +314,7 @@ function Index() {
               <img src={aboutWorker} alt="Solar expert" className="w-full" loading="lazy" />
             </div>
             <div className="absolute -bottom-6 -left-6 z-20 rounded-2xl bg-sun px-5 py-4 text-ink shadow-xl">
-              <div className="text-2xl font-extrabold">15+</div>
+              <div className="text-2xl font-extrabold">10+</div>
               <div className="text-xs font-semibold">Years on Field</div>
             </div>
           </Reveal>
@@ -344,9 +343,9 @@ function Index() {
           <div>
             <h2 className="text-4xl font-extrabold text-ink md:text-5xl">We Provide The Best Services</h2>
             <p className="mt-4 max-w-md text-sm text-muted-foreground">
-              We Offer A Comprehensive Suite Of Services Designed To Meet All Your Solar And Renewable Energy Needs. As Industry Leaders With A Passion For Sustainability, We're Committed To Providing Innovative Solutions
+            Transform your energy experience with KSR Solar Solutions. We specialize in solar installations, inverter systems, and electrical works that help homes and businesses achieve lower energy costs, greater reliability, and a cleaner, greener future.         
             </p>
-            <button className="mt-6 rounded-md bg-brand px-6 py-3 text-sm font-bold text-white hover:bg-brand-dark">More Details</button>
+            <button className="mt-6 rounded-md bg-brand px-6 py-3 text-sm font-bold text-white hover:bg-brand-dark">For More Details</button>
           </div>
           <Reveal variant="right" delay={200} className="relative mx-auto w-full max-w-md">
             <div className="img-card shine">
@@ -364,9 +363,9 @@ function Index() {
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
-              { img: projectSolar, title: "Solar Panels", text: "We Believe In Harnessing The Power Of The Sun To Provide Clean, Sustainable Energy Solutions For Homes, Businesses, And Communities. Our High-Quality Solar Panels" },
-              { img: projectInverter, title: "Inverters Installation", text: "Professional installation of high-efficiency solar inverters with safe wiring, smart monitoring, and seamless grid integration—engineered for maximum power conversion and long-term reliability." },
-              { img: projectElectrical, title: "Building Electrical Works", text: "End-to-end commercial and residential electrical works including distribution boards, wiring, earthing, and load balancing—delivered by certified electricians with a focus on safety and code compliance." },
+              { img: projectSolar, title: "Solar Panels", text: "Our solar panel projects are designed to provide clean, reliable, and cost-effective energy for homes and businesses. With expert installation and premium-quality components, we help customers reduce electricity costs while embracing a sustainable future." },
+              { img: projectInverter, title: "Inverters Installation", text: "Our inverter installation projects are designed to maximize solar system performance through efficient power conversion We deliver high-quality solutions that ensure stable energy output and long-term savings for homes and businesses." },
+              { img: projectElectrical,   text: "Our electrical projects deliver safe, efficient, and dependable power solutions for residential and commercial properties. From wiring and distribution systems to electrical upgrades and maintenance, we ensure every installation meets the highest standards of quality and safety."},
             ].map((p, i) => (
               <Reveal key={p.title} variant="zoom" delay={(i === 0 ? 0 : i === 1 ? 200 : 400) as 0 | 200 | 400} className="group">
                 <div className="lift overflow-hidden rounded-2xl bg-white shadow-xl">
@@ -400,8 +399,8 @@ function Index() {
       {/* TESTIMONIALS */}
       <section id="testimonials" className="bg-brand pb-24 scroll-mt-24">
         <div className="mx-auto max-w-7xl px-6">
-          <p className="text-sm font-bold uppercase tracking-wider text-sun">Our Customers Reviews</p>
-          <h2 className="mt-2 text-4xl font-extrabold text-white md:text-5xl">What They Say</h2>
+          <p className="text-sm font-bold uppercase tracking-wider text-sun">Client Testimonials</p>
+          <h2 className="mt-2 text-4xl font-extrabold text-white md:text-5xl">What Our Clients Say About Us</h2>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
@@ -440,7 +439,7 @@ function Index() {
               <p className="text-lg font-semibold">We Are Here To Help You</p>
               <h3 className="mt-3 text-4xl font-extrabold md:text-5xl">Any Questions ? Let's Talk</h3>
               <button className="mt-7 rounded-md bg-sun px-7 py-3 text-sm font-bold text-ink hover:brightness-95">
-                Subscribe
+                Contct Us
               </button>
             </div>
             <Reveal variant="right" delay={200} className="relative">
@@ -465,9 +464,9 @@ function Index() {
           <div>
             <h4 className="text-base font-bold text-ink">Contact Us</h4>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
-              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-brand" /><span>(+52) 1254 984</span></li>
-              <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-brand" /><span>Miami, Florida</span></li>
-              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand" /><span>info@ksrsolar.com</span></li>
+              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-brand" /><span>(+91) 9247298248</span></li>
+              <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-brand" /><span>Vizianagaram, Andhra Pradesh</span></li>
+              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand" /><span>KSRSolarSolutions@gmail.com</span></li>
               <li className="flex items-center gap-2">
                 <WhatsAppIcon className="h-4 w-4 text-brand" />
                 <a href={`https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, "")}`} target="_blank" rel="noopener noreferrer" className="hover:text-brand">WhatsApp {WHATSAPP_NUMBER}</a>
