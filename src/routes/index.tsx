@@ -180,7 +180,7 @@ function CountUp({ end, suffix = "", duration = 2000 }: { end: number; suffix?: 
   return <span ref={ref}>{value.toLocaleString()}{suffix}</span>;
 }
 
-const WHATSAPP_NUMBER = "+919876543210"; // TODO: replace with your business WhatsApp number
+const WHATSAPP_NUMBER = "(+91)9247298248"; // TODO: replace with your business WhatsApp number
 
 
 
@@ -323,8 +323,8 @@ At KSR Solar Solutions, we are dedicated to delivering reliable and sustainable 
         <div className="mx-auto mt-16 grid max-w-6xl grid-cols-2 gap-8 px-6 text-center md:grid-cols-4">
           {[
             { n: 50, suffix: "+", l: "Years Experience" },
-            { n: 1150, suffix: "+", l: "Project Completed" },
-            { n: 5000, suffix: "+", l: "Happy Customer" },
+            { n: 1150, suffix: "+", l: "Projects Completed" },
+            { n: 5000, suffix: "+", l: "Happy Customers" },
             { n: 30, suffix: "+", l: "Awards Milestones" },
           ].map((s, i) => (
             <Reveal key={s.l} delay={(i * 100) as 0 | 100 | 200 | 300}>
