@@ -180,7 +180,7 @@ function CountUp({ end, suffix = "", duration = 2000 }: { end: number; suffix?: 
   return <span ref={ref}>{value.toLocaleString()}{suffix}</span>;
 }
 
-const WHATSAPP_NUMBER = "(+91)9247298248"; // TODO: replace with your business WhatsApp number
+const WHATSAPP_NUMBER = "(+91) 9247298248"; // TODO: replace with your business WhatsApp number
 
 
 
