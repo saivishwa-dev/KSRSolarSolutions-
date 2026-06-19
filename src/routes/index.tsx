@@ -404,7 +404,7 @@ At KSR Solar Solutions, we are dedicated to delivering reliable and sustainable 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
               { name: "Jyothi Chebolu.", text: "I recently had an on-grid solar system installed and I am extremely satisfied with the entire experience. The team was professional knowledgeable and guided me through every step of the process.." },
-              { name: "Udandarao Saisudha.", text: "Excellent customer service, professionalism, and quality of work, nothing aspects like technicians who are knowledgeable, efficient, and courteous.." },
+              { name: "Udandarao Saisudha.", text: "Excellent customer service, professionalism, and quality of work, nothing aspects like technicians who are knowledgeable, These guys work is really perfect with a great quality efficient, and courteous.." },
               { name: "Harshavardhan Chandaka.", text: "Very happy with the quality of service and installation.The installation was neat, and the team ensured the site was clean before leaving. Great customer support and excellent after-sales service.." },
             ].map((t, i) => (
               <Reveal key={t.name} delay={(i === 0 ? 0 : i === 1 ? 200 : 400) as 0 | 200 | 400}>
