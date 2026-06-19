@@ -437,8 +437,8 @@ At KSR Solar Solutions, we are dedicated to delivering reliable and sustainable 
             <div className="text-white">
               <p className="text-lg font-semibold">We Are Here To Help You</p>
               <h3 className="mt-3 text-4xl font-extrabold md:text-5xl">Any Questions ? Let's Talk</h3>
-              <button className="mt-7 rounded-md bg-sun px-7 py-3 text-sm font-bold text-ink hover:brightness-95">
-                Contct Us
+              <button onClick={() => window.location.href = 'tel:+918074964919'}
+              className="mt-7 rounded-md bg-sun px-7 py-3 text-sm font-bold text-ink hover:brightness-95">Contact Us 
               </button>
             </div>
             <Reveal variant="right" delay={200} className="relative">
