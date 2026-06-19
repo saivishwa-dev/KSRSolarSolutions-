@@ -102,7 +102,7 @@ function Nav() {
             );
           })}
         </div>
-       <a href={`tel:${WHATSAPP_NUMBER.replace(/\+/g, "")}`}
+       <a href={"tel:+918074964919"}
       className="rounded-full bg-sun px-6 py-2.5 text-sm font-bold text-ink shadow-sm transition hover:brightness-95"
        aria-label="Call us">
       Let's Talk
