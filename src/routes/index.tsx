@@ -251,11 +251,11 @@ At KSR Solar Solutions, we are dedicated to delivering reliable and sustainable 
                 <button className="rounded-md bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-md transition hover:bg-brand-dark">
                   How We Work ?
                 </button>
-                <button className="group flex items-center gap-3 text-sm font-semibold text-ink">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand text-white transition group-hover:scale-110">
-                    <Play className="h-4 w-4 fill-white" />
-                  </span>
-                  Watch Our work?
+                <button onClick={() => window.open( "https://www.instagram.com/ksr_solar_solutions?igsh=MTJqaTdqaWJldXNqNQ==", "_blank") }
+                className="group flex items-center gap-3 text-sm font-semibold text-ink">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand text-white transition group-hover:scale-110">
+                <Play className="h-4 w-4 fill-white" />
+                </span>Watch Our Work
                 </button>
               </div>
             </div>
