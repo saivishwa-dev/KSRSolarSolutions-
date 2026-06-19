@@ -102,12 +102,11 @@ function Nav() {
             );
           })}
         </div>
-        <a
-          href="#contact"
-          className="rounded-full bg-sun px-6 py-2.5 text-sm font-bold text-ink shadow-sm transition hover:brightness-95"
-        >
-          Let's Talk
-        </a>
+       <a href={`tel:${WHATSAPP_NUMBER.replace(/\+/g, "")}`}
+      className="rounded-full bg-sun px-6 py-2.5 text-sm font-bold text-ink shadow-sm transition hover:brightness-95"
+       aria-label="Call us">
+      Let's Talk
+      </a>
       </nav>
     </header>
   );
@@ -180,7 +179,7 @@ function CountUp({ end, suffix = "", duration = 2000 }: { end: number; suffix?: 
   return <span ref={ref}>{value.toLocaleString()}{suffix}</span>;
 }
 
-const WHATSAPP_NUMBER = "(+91) 9247298248"; // TODO: replace with your business WhatsApp number
+const WHATSAPP_NUMBER = "(+91) 8074964919"; // TODO: replace with your business WhatsApp number
 
 
 
@@ -404,9 +403,9 @@ At KSR Solar Solutions, we are dedicated to delivering reliable and sustainable 
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
-              { name: "Jane Doe.", text: "I've Been Wanting To Transition To Solar Energy For Quite Some Time, But I Was Unsure About The Process And Its Benefits." },
-              { name: "Harry Shrek.", text: "The Team Was Incredibly Professional And Knowledgeable. Not Only Am I Now Enjoying Benefits Of Solar Energy." },
-              { name: "Jems Doe.", text: "I've Been Wanting To Transition To Solar Energy For Quite Some Time, But I Was Unsure About The Process And Its Benefits." },
+              { name: "Jyothi Chebolu.", text: "I recently had an on-grid solar system installed and I am extremely satisfied with the entire experience. The team was professional knowledgeable and guided me through every step of the process.." },
+              { name: "Udandarao Saisudha.", text: "Excellent customer service, professionalism, and quality of work, nothing aspects like technicians who are knowledgeable, efficient, and courteous.." },
+              { name: "Harshavardhan Chandaka.", text: "Very happy with the quality of service and installation.The installation was neat, and the team ensured the site was clean before leaving. Great customer support and excellent after-sales service.." },
             ].map((t, i) => (
               <Reveal key={t.name} delay={(i === 0 ? 0 : i === 1 ? 200 : 400) as 0 | 200 | 400}>
                 <div className="lift rounded-2xl border border-white/25 bg-white/[0.04] p-6 text-center text-white/90 backdrop-blur-sm hover:border-sun/60 hover:bg-white/[0.08]">
@@ -464,7 +463,7 @@ At KSR Solar Solutions, we are dedicated to delivering reliable and sustainable 
           <div>
             <h4 className="text-base font-bold text-ink">Contact Us</h4>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
-              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-brand" /><span>(+91) 9247298248</span></li>
+              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-brand" /><span>(+91) 8074964919</span></li>
               <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-brand" /><span>Vizianagaram, Andhra Pradesh</span></li>
               <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand" /><span>KSRSolarSolutions@gmail.com</span></li>
               <li className="flex items-center gap-2">
