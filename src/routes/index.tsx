@@ -464,8 +464,21 @@ At KSR Solar Solutions, we are dedicated to delivering reliable and sustainable 
             <h4 className="text-base font-bold text-ink">Contact Us</h4>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-brand" /><span>(+91) 8074964919</span></li>
-              <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-brand" /><span>Vizianagaram, Andhra Pradesh</span></li>
-              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand" /><span>KSRSolarSolutions@gmail.com</span></li>
+              <li className="flex items-center gap-2">
+  <MapPin className="h-4 w-4 text-brand" />
+ <a
+  href="https://www.google.com/maps?q=18.11109897282576,83.42054561478021"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 hover:text-brand transition-colors"
+  aria-label="Open KSR Solar Solutions location in Google Maps"
+>
+  <MapPin className="h-4 w-4 text-brand" />
+  <span>Vizianagaram, Andhra Pradesh</span>
+</a>
+</li>
+              <li className="flex items-center gap-2"> <Mail className="h-4 w-4 text-brand" />
+              <a href="mailto:KSRSolarSolutions@gmail.com" className="hover:text-brand transition-colors">KSRSolarSolutions@gmail.com </a></li>
               <li className="flex items-center gap-2">
                 <WhatsAppIcon className="h-4 w-4 text-brand" />
                 <a href={`https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, "")}`} target="_blank" rel="noopener noreferrer" className="hover:text-brand">WhatsApp {WHATSAPP_NUMBER}</a>
