@@ -11,7 +11,7 @@ import ctaBuilding from "@/assets/cta-building.png";
 import iconSolar from "@/assets/icon-solar.png";
 import iconInverter from "@/assets/icon-inverter.png";
 import iconElectrical from "@/assets/icon-electrical.png";
-
+import Brands from '@/components/ui/Brands'
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -450,6 +450,10 @@ At KSR Solar Solutions, we are dedicated to delivering reliable and sustainable 
           </div>
         </div>
       </section>
+
+
+      {/* BRANDS */}
+      <Brands />
 
       {/* FOOTER */}
       <footer id="contact" className="bg-white py-16 scroll-mt-24">
