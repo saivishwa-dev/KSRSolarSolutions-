@@ -18,15 +18,15 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section className="bg-brand py-16">
+    <section className="bg-white py-16">
 
       <div className="mx-auto max-w-7xl px-6">
 
-        <p className="text-center text-lg font-semibold text-sun">
+        <p className="text-center text-xl font-extrabold text-black-600">
           Trusted Technology Partners
         </p>
 
-        <h2 className="mt-3 mb-16 text-center text-4xl font-extrabold text-white md:text-5xl">
+        <h2 className="mt-3 mb-16 text-center text-4xl font-extrabold text-black md:text-5xl">
           Brands We Proudly Work With
         </h2>
 
@@ -58,12 +58,12 @@ export default function Brands() {
 
                   transition-all
                   duration-500
-                  ease-in-out
+                  ease-out
 
-                  group-hover:-translate-y-3
-                  group-hover:scale-110
+                  group-hover:-translate-y-2
+                  group-hover:scale-105
 
-                  group-hover:drop-shadow-[0_0_25px_rgba(255,182,4,0.45)]
+                  group-hover:drop-shadow-[0_10px_20px_rgba(0,0,0,0.15)]
                 "
               />
 
