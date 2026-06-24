@@ -325,7 +325,7 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 function WhatsAppButton() {
-  const link = `https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, '')}`;
+  const link = `https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, "")}`;
 
   return (
     <a
@@ -336,6 +336,10 @@ function WhatsAppButton() {
       className="
         group
         fixed
+        bottom-6
+        right-6
+        md:bottom-5
+        md:right-5
         z-[9999]
 
         flex items-center
@@ -352,26 +356,23 @@ function WhatsAppButton() {
         hover:scale-105
         hover:shadow-[0_12px_35px_rgba(37,211,102,0.55)]
       "
-      style={{
-        right: '24px',
-        bottom: '24px',
-      }}
     >
       <span
         className="
           relative
           flex
-          h-16
-          w-16
+          h-[68px]
+          w-[68px]
           items-center
           justify-center
           rounded-full
           bg-[#25D366]
         "
       >
-        {/* Pulse ring */}
+        {/* Pulse ring only on desktop */}
         <span
           className="
+            hidden sm:block
             absolute
             inset-0
             rounded-full
@@ -381,7 +382,7 @@ function WhatsAppButton() {
           "
         />
 
-        <WhatsAppIcon className="relative h-8 w-8" />
+        <WhatsAppIcon className="relative h-9 w-9" />
       </span>
 
       {/* Hidden on mobile */}
