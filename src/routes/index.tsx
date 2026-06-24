@@ -338,8 +338,6 @@ function WhatsAppButton() {
         fixed
         bottom-6
         right-6
-        md:bottom-5
-        md:right-5
         z-[9999]
 
         flex items-center
@@ -357,22 +355,25 @@ function WhatsAppButton() {
         hover:shadow-[0_12px_35px_rgba(37,211,102,0.55)]
       "
     >
+
       <span
         className="
           relative
           flex
-          h-[68px]
-          w-[68px]
+          h-12
+          w-12
+          sm:h-14
+          sm:w-14
           items-center
           justify-center
           rounded-full
           bg-[#25D366]
         "
       >
-        {/* Pulse ring only on desktop */}
+
+        {/* Pulse Ring */}
         <span
           className="
-            hidden sm:block
             absolute
             inset-0
             rounded-full
@@ -382,7 +383,16 @@ function WhatsAppButton() {
           "
         />
 
-        <WhatsAppIcon className="relative h-9 w-9" />
+        <WhatsAppIcon
+          className="
+            relative
+            h-7
+            w-7
+            sm:h-8
+            sm:w-8
+          "
+        />
+
       </span>
 
       {/* Hidden on mobile */}
