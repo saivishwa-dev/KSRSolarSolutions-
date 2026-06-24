@@ -335,7 +335,7 @@ function WhatsAppButton() {
       aria-label="Chat on WhatsApp"
       className="
         group
-        fixed bottom-4 right-4 md:bottom-5 md:right-5
+        fixed bottom-6 right-6 md:bottom-5 md:right-5
         z-[100]
 
         flex items-center
@@ -355,7 +355,7 @@ function WhatsAppButton() {
       <span
         className="
           relative
-          flex h-12 w-12 items-center justify-center
+          flex h-14 w-14 items-center justify-center
           rounded-full
           bg-[#25D366]
         "
@@ -369,8 +369,9 @@ function WhatsAppButton() {
           "
         />
 
-        <WhatsAppIcon className="relative h-6 w-6" />
+        <WhatsAppIcon className="relative h-7 w-7" />
       </span>
+
       {/* Hidden on mobile */}
       <span
         className="
