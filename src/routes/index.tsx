@@ -325,7 +325,7 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 function WhatsAppButton() {
-  const link = `https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, "")}`;
+  const link = `https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, '')}`;
 
   return (
     <a
@@ -335,8 +335,8 @@ function WhatsAppButton() {
       aria-label="Chat on WhatsApp"
       className="
         group
-        fixed bottom-6 right-6 md:bottom-5 md:right-5
-        z-[100]
+        fixed
+        z-[9999]
 
         flex items-center
         rounded-full
@@ -346,16 +346,25 @@ function WhatsAppButton() {
 
         shadow-[0_8px_25px_rgba(37,211,102,0.35)]
 
-        transition-all duration-300
+        transition-all
+        duration-300
 
         hover:scale-105
         hover:shadow-[0_12px_35px_rgba(37,211,102,0.55)]
       "
+      style={{
+        right: '24px',
+        bottom: '24px',
+      }}
     >
       <span
         className="
           relative
-          flex h-14 w-14 items-center justify-center
+          flex
+          h-16
+          w-16
+          items-center
+          justify-center
           rounded-full
           bg-[#25D366]
         "
@@ -363,22 +372,28 @@ function WhatsAppButton() {
         {/* Pulse ring */}
         <span
           className="
-            absolute inset-0 rounded-full
-            border-2 border-white/40
+            absolute
+            inset-0
+            rounded-full
+            border-2
+            border-white/40
             animate-ping
           "
         />
 
-        <WhatsAppIcon className="relative h-7 w-7" />
+        <WhatsAppIcon className="relative h-8 w-8" />
       </span>
 
       {/* Hidden on mobile */}
       <span
         className="
-          hidden sm:block
+          hidden
+          sm:block
           whitespace-nowrap
-          px-3 pr-4
-          text-sm font-bold
+          px-3
+          pr-4
+          text-sm
+          font-bold
         "
       >
         Contact us now
