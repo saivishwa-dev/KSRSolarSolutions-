@@ -328,88 +328,124 @@ function WhatsAppButton() {
   const link = `https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, "")}`;
 
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Chat on WhatsApp"
-      className="
-        group
-        fixed
-        bottom-6
-        right-6
-        z-[9999]
+    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-[9999] flex flex-col items-center gap-2">
 
-        flex items-center
-        rounded-full
-
-        bg-[#25D366]
-        text-white
-
-        shadow-[0_8px_25px_rgba(37,211,102,0.35)]
-
-        transition-all
-        duration-300
-
-        hover:scale-105
-        hover:shadow-[0_12px_35px_rgba(37,211,102,0.55)]
-      "
-    >
-
-      <span
+      {/* Tooltip label — visible always on desktop, hidden on mobile */}
+      <div
         className="
-          relative
-          flex
-          h-12
-          w-12
-          sm:h-14
-          sm:w-14
-          items-center
-          justify-center
-          rounded-full
-          bg-[#25D366]
+          hidden md:flex
+          flex-col items-center
+          animate-bounce
         "
+        style={{ animationDuration: "2s" }}
       >
-
-        {/* Pulse Ring */}
         <span
           className="
-            absolute
-            inset-0
+            bg-white text-[#25D366]
+            text-xs font-bold
+            px-3 py-1.5
             rounded-full
-            border-2
-            border-white/40
-            animate-ping
+            shadow-md
+            whitespace-nowrap
+            border border-[#25D366]/20
           "
-        />
+        >
+          💬 Chat with us!
+        </span>
+        {/* Arrow pointing down to the button */}
+        <svg width="12" height="8" viewBox="0 0 12 8" className="text-white drop-shadow-sm">
+          <path d="M6 8L0 0h12z" fill="white" />
+        </svg>
+      </div>
 
-        <WhatsAppIcon
-          className="
-            relative
-            h-7
-            w-7
-            sm:h-8
-            sm:w-8
-          "
-        />
-
-      </span>
-
-      {/* Hidden on mobile */}
-      <span
+      {/* Mobile tooltip — shown only on mobile */}
+      <div
         className="
-          hidden
-          sm:block
-          whitespace-nowrap
-          px-3
-          pr-4
-          text-sm
-          font-bold
+          flex md:hidden
+          animate-bounce
+        "
+        style={{ animationDuration: "2s" }}
+      >
+        <span
+          className="
+            bg-white text-[#25D366]
+            text-[10px] font-bold
+            px-2.5 py-1
+            rounded-full
+            shadow-md
+            whitespace-nowrap
+            border border-[#25D366]/20
+          "
+        >
+          💬 Tap to chat
+        </span>
+      </div>
+
+      {/* WhatsApp Circle Button */}
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        className="
+          relative
+          flex items-center justify-center
+
+          h-14 w-14
+          md:h-16 md:w-16
+
+          rounded-full
+          bg-[#25D366]
+          text-white
+
+          shadow-[0_8px_25px_rgba(37,211,102,0.4)]
+          transition-all duration-300
+          hover:scale-110
+          hover:shadow-[0_14px_40px_rgba(37,211,102,0.6)]
+
+          overflow-hidden
+          isolate
+          will-change-transform
         "
       >
-        Contact us now
+        {/* Ping ring 1 — clipped safely by overflow-hidden */}
+        <span
+          className="
+            absolute inset-0
+            rounded-full
+            border-2 border-white/50
+            animate-ping
+          "
+          style={{ animationDuration: "1.5s" }}
+        />
+
+        {/* Ping ring 2 — slightly delayed for layered effect */}
+        <span
+          className="
+            absolute inset-0
+            rounded-full
+            border-2 border-white/20
+            animate-ping
+          "
+          style={{ animationDuration: "2.2s", animationDelay: "0.4s" }}
+        />
+
+        <WhatsAppIcon className="relative z-10 h-7 w-7 md:h-8 md:w-8" />
+      </a>
+
+      {/* "We reply fast" text below button */}
+      <span
+        className="
+          text-[10px] md:text-xs
+          text-gray-500
+          font-medium
+          whitespace-nowrap
+        "
+      >
+        ⚡ We reply fast
       </span>
-    </a>
+
+    </div>
   );
 }
 
