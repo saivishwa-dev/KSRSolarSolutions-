@@ -328,7 +328,7 @@ function WhatsAppButton() {
   const link = `https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, "")}`;
 
   return (
-    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-[9999] flex flex-col items-center gap-2">
+  <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-[9999] flex flex-col items-center gap-2">
 
       {/* Tooltip label — visible always on desktop, hidden on mobile */}
       <div
@@ -358,28 +358,12 @@ function WhatsAppButton() {
         </svg>
       </div>
 
-      {/* Mobile tooltip — shown only on mobile */}
-      <div
-        className="
-          flex md:hidden
-          animate-bounce
-        "
-        style={{ animationDuration: "2s" }}
-      >
-        <span
-          className="
-            bg-white text-[#25D366]
-            text-[10px] font-bold
-            px-2.5 py-1
-            rounded-full
-            shadow-md
-            whitespace-nowrap
-            border border-[#25D366]/20
-          "
-        >
-          💬 Tap to chat
-        </span>
-      </div>
+     {/* Mobile tooltip — shown only on mobile */}
+<div className="flex md:hidden">
+  <span className="bg-white text-[#25D366] text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md whitespace-nowrap border border-[#25D366]/20">
+    💬 Tap to chat
+  </span>
+</div>
 
       {/* WhatsApp Circle Button */}
       <a
@@ -451,7 +435,7 @@ function WhatsAppButton() {
 
 function Index() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <Nav />
       {/* spacer for fixed nav */}
       <div className="h-[72px] bg-brand" />
@@ -800,12 +784,12 @@ function Index() {
 
       {/* ── LOCATION MAP ─────────────────────────────────────────────────────── */}
       <section id="location" className="bg-brand py-24 scroll-mt-24 relative overflow-hidden">
-        {/* Decorative ambient glows — matches the rest of the page */}
-        <div className="pointer-events-none absolute -top-20 -left-20 h-72 w-72 rounded-full bg-sun/10 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-20 -right-20 h-72 w-72 rounded-full bg-brand-light/20 blur-3xl" />
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-sun/10 blur-3xl" />
+          <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-brand-light/20 blur-3xl" />
+        </div>
 
         <div className="mx-auto max-w-6xl px-6 relative z-10">
-          {/* Section heading — same pattern as About / Projects */}
           <Reveal variant="up">
             <p className="text-sm font-bold uppercase tracking-wider text-sun">Our Location</p>
             <h2 className="mt-2 text-4xl font-extrabold text-white md:text-5xl">
@@ -817,14 +801,11 @@ function Index() {
             </p>
           </Reveal>
 
-          {/* Main card: map + info panel */}
           <div
             className="mt-12 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] shadow-2xl
                           grid grid-cols-1 md:grid-cols-[1fr_320px] backdrop-blur-sm"
           >
-            {/* ── Google Map iframe ── */}
             <Reveal variant="left" className="relative min-h-[360px] md:min-h-[440px]">
-              {/* subtle sun-glow behind the map card */}
               <div className="pointer-events-none absolute -inset-4 -z-10 rounded-3xl bg-sun/10 blur-2xl" />
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d60673.52485230051!2d83.41098249999999!3d18.11338965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3a3be53bab73db9d%3A0x48390408503fe634!2sKSR%20INVERTER%20BATTERY%20AND%20SOLAR%20SOLUTIONS%2C%20Dasannapeta%20Dasannapeta%2C%20Ayya%20Koneru%20Area%2C%20Babametta%2C%20Vizianagaram%2C%20Andhra%20Pradesh%20535002!3m2!1d18.1095792!2d83.41992479999999!5e0!3m2!1sen!2sin!4v1782306706888!5m2!1sen!2sin"
@@ -837,19 +818,17 @@ function Index() {
               />
             </Reveal>
 
-            {/* ── Info panel ── */}
-            <Reveal variant="right" delay={200} className="flex flex-col gap-0 bg-black/30 p-7">
+            <Reveal variant="up" delay={200} className="flex flex-col gap-0 bg-black/30 p-7">
               <p className="mb-5 text-base font-extrabold text-white">Contact Details</p>
 
-              {/* Info rows */}
               <div className="flex flex-col gap-4 flex-1">
                 {MAP_INFO.map(({ icon, label, value }, i) => (
                   <Reveal
                     key={label}
+                    variant="up"
                     delay={(i * 100) as 0 | 100 | 200 | 300}
                     className="flex items-start gap-3 group"
                   >
-                    {/* yellow icon badge */}
                     <div
                       className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center
              rounded-full bg-sun text-black shadow-md
@@ -873,10 +852,8 @@ function Index() {
                 ))}
               </div>
 
-              {/* Get Directions CTA — matches your sun-button style */}
-              <Reveal delay={400} className="mt-7">
-                <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=KSR+INVERTER+BATTERY+AND+SOLAR+SOLUTIONS,+Dasannapeta,+Vizianagaram,+Andhra+Pradesh+535002"
+              <Reveal variant="up" delay={400} className="mt-7">
+                  <a href="https://www.google.com/maps/dir/?api=1&destination=KSR+INVERTER+BATTERY+AND+SOLAR+SOLUTIONS,+Dasannapeta,+Vizianagaram,+Andhra+Pradesh+535002"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex w-full items-center justify-center gap-2
